@@ -1,0 +1,16 @@
+添加app下载的入口
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch d08_07_07_01
+# Your branch is ahead of 'origin/d8' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   app/src/main/java/com/dudu/aios/ui/activity/MainRecordActivity.java
+#	new file:   app/src/main/java/com/dudu/android/launcher/ui/dialog/AppDownloadDialog.java
+#	modified:   app/src/main/java/com/dudu/android/launcher/utils/DialogUtils.java
+#	new file:   app/src/main/res/drawable-hdpi/app_download_entrance_icon.png
+#	modified:   app/src/main/res/layout-1920x480/activity_custom_title_aio.xml
+#	new file:   app/src/main/res/layout-1920x480/dialog_app_download_entrance.xml
+#	modified:   app/src/main/res/values/styles.xml
+#

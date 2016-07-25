@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <server_ip>pro-dudu-obd.gz.1251739498.clb.myqcloud.com</server_ip>
+    <server_port>9998</server_port>
+    <test_server_ip>119.29.132.60</test_server_ip>
+    <test_server_port>9998</test_server_port>
+    <rtmp>rtmp://pro-dudu-stream.gz.1251739498.clb.myqcloud.com/myapp/</rtmp>
+    <test_rtmp>rtmp://182.254.227.45/myapp/</test_rtmp>
+    <tcpIp>pro-dudu-stream.gz.1251739498.clb.myqcloud.com</tcpIp>
+    <test_tcpIp>182.254.227.45</test_tcpIp>
+    <tcpPort>54320</tcpPort>
+    <server_address>http://pro-dudu-api.gz.1251739498.clb.myqcloud.com:8888/</server_address>
+    <test_server_address>http://119.29.137.192:8888/</test_server_address>
+    <socket_address>pro-dudu-event.gz.1251739498.clb.myqcloud.com</socket_address>
+    <test_socket_address>119.29.154.212</test_socket_address>
+    <socket_port>9999</socket_port>
+    <test_socket_port>9999</test_socket_port>
+    <is_test>1</is_test>
+    <version>2</version>
+</config>

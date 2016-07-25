@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dict>
+    <item id="0" province="黑龙江">哈尔滨</item>
+    <item id="1" province="吉林">长春</item>
+    <item id="2" province="河北">石家庄</item>
+    <item id="3" province="甘肃">兰州</item>
+    <item id="4" province="青海">西宁</item>
+    <item id="5" province="陕西">西安</item>
+    <item id="6" province="河南">郑州</item>
+    <item id="7" province="山东">济南</item>
+    <item id="8" province="山西">太原</item>
+    <item id="9" province="安徽">合肥</item>
+    <item id="10" province="湖北">武汉</item>
+    <item id="11" province="湖南">长沙</item>
+    <item id="12" province="江苏">南京</item>
+    <item id="13" province="四川">成都</item>
+    <item id="14" province="贵州">贵阳</item>
+    <item id="15" province="云南">昆明</item>
+    <item id="16" province="浙江">杭州</item>
+    <item id="17" province="江西">南昌</item>
+    <item id="18" province="广东">广州</item>
+    <item id="19" province="福建">福州</item>
+    <item id="20" province="台湾">台北</item>
+    <item id="21" province="海南">海口</item>
+    <item id="22" province="新疆">乌鲁木齐</item>
+    <item id="23" province="内蒙古">内蒙古</item>
+    <item id="24" province="宁夏">银川</item>
+    <item id="25" province="广西">南宁</item>
+    <item id="26" province="西藏">拉萨</item>
+    <item id="27" province="辽宁">沈阳</item>
+</dict>

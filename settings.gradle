@@ -1,0 +1,5 @@
+include ':agedmodel', ':agewifitest', ':agebluetest', ':calculation', ':storage', ':ext', ':commonlib', ':rest', ':workflow', ':drivevideo', ':persistence', ':libserial', ':resource', ':librestreaming'
+
+include ':app', ':libble', ':scf4a', ':navi', ':hideapi', ':monitor', ':network', ':bluetooth'
+
+

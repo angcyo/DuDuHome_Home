@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <!--图片-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        tools:src="@drawable/icon_temp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/imageView"
+        android:orientation="vertical">
+
+        <!--标题-->
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            tools:text="轮胎最高温度值"/>
+
+        <!--数值-->
+        <TextView
+            android:id="@+id/valueView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00C4FF"
+            android:textSize="36sp"
+            tools:text="70°C"/>
+    </LinearLayout>
+
+</RelativeLayout>

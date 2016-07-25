@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/black">
+
+    <!--左边区域-->
+    <RelativeLayout
+        android:id="@+id/leftLayout"
+        android:layout_width="600dp"
+        android:layout_height="match_parent">
+
+        <!--上行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/tire_car_margin"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/tpmsL1Layout"
+                layout="@layout/fragment_tire_item_left_left"/>
+
+            <ImageView
+                android:id="@+id/tpmsL1Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                tools:src="@drawable/line_blue_left"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="120dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/tpmsR1Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                tools:src="@drawable/line_blue_right"/>
+
+            <include
+                android:id="@+id/tpmsR1Layout"
+                layout="@layout/fragment_tire_item_left_right"/>
+
+        </LinearLayout>
+
+        <!--下行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/tire_car_margin"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/tpmsL2Layout"
+                layout="@layout/fragment_tire_item_left_left"/>
+
+            <ImageView
+                android:id="@+id/tpmsL2Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                tools:src="@drawable/line_blue_left"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="120dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/tpmsR2Line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                tools:src="@drawable/line_blue_right"/>
+
+            <include
+                android:id="@+id/tpmsR2Layout"
+                layout="@layout/fragment_tire_item_left_right"/>
+
+        </LinearLayout>
+
+        <!--Left Right-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:text="Left"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="160dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Right"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!--车辆-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/car_line_icon"/>
+    </RelativeLayout>
+
+    <!--右边区域-->
+    <LinearLayout
+        android:id="@+id/rightLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/leftLayout"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/tempItemLayout"
+            layout="@layout/fragment_tire_item_right"/>
+
+        <include
+            android:id="@+id/frontItemLayout"
+            layout="@layout/fragment_tire_item_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"/>
+
+        <include
+            android:id="@+id/backItemLayout"
+            layout="@layout/fragment_tire_item_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"/>
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_back_selector"/>
+
+</RelativeLayout>

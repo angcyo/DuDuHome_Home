@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_bg">
+
+    <RelativeLayout
+        android:id="@+id/common_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+
+        <ImageView
+            android:id="@+id/icon_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/title_logo"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/common_title_layout"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_80"
+        android:paddingRight="@dimen/dp_80"
+        android:layout_marginBottom="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/txt_title_protocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/title_protocal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarThumbVertical="@color/blue">
+
+            <TextView
+                android:id="@+id/txt_protocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"/>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/common_title_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@drawable/close_protocal_selector"/>
+</RelativeLayout>
+

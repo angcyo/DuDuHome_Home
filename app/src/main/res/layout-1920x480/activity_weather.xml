@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:wcv="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/common_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+
+        <ImageView
+            android:id="@+id/icon_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/title_logo"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_50"
+        android:paddingTop="@dimen/dp_70">
+
+        <TextView
+            android:id="@+id/txt_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"/>
+
+        <TextView
+            android:id="@+id/txt_curr_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_55"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/txt_range_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_weather_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/layout_weather"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_70">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                android:id="@+id/txt_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/icon_weather_type"
+            android:layout_width="@dimen/dp_170"
+            android:layout_height="@dimen/dp_170"
+            android:paddingTop="@dimen/dp_15"/>
+    </LinearLayout>
+
+    <com.dudu.weather.view.WeatherCurveView
+        android:id="@+id/curve_weather"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_70"
+        android:layout_toRightOf="@+id/layout_date"
+        android:visibility="invisible"
+        wcv:curveColor="@color/white"
+        wcv:textColor="@color/white"
+        wcv:textSize="@dimen/sp_18"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_weather"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/curve_weather"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_toRightOf="@id/layout_date"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/common_title_layout"
+        android:background="@color/black">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/view_loading"
+            android:layout_width="336.5dp"
+            android:layout_height="146dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_back_selector"/>
+
+</RelativeLayout>
